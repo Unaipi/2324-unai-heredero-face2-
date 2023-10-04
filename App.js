@@ -22,10 +22,11 @@ const App = () => {
     backgroundColor='#FFFFFF'
     barStyle="dark-content"
     />
-    <ScrollView>
+    <ScrollView
+    style={{ maxHeight: "8%"}}>
       <Header/>
     </ScrollView>
-<NavigationContainer>
+    <NavigationContainer>
       <Tab.Navigator
       swipeEnabled={true}
       tabBarOptions={{
@@ -54,8 +55,8 @@ const App = () => {
         <Tab.Screen name="Profile" component={Profile}/>
         <Tab.Screen name="Notifications" component={Notifications}/>
         <Tab.Screen name="Menu" component={Menu}/>
-        </Tab.Navigator>
-      </NavigationContainer>
+      </Tab.Navigator>
+    </NavigationContainer>
 
     </>
   );

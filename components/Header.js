@@ -10,6 +10,9 @@ const Header = () => {
                 <Button>
                     <MaterialCommunityIcons name='magnify' size={26} color='black' />
                 </Button>
+                <Button>
+                    <MaterialCommunityIcons name='facebook-messenger' size={26} color='black' />
+                </Button>
             </Row>
         </Container>
     )
@@ -23,7 +26,7 @@ const Container = styled.View`
  align-items: center;
  flex-direction: row;
  justify-content: space-between;
- margin-top: 25px; 
+ margin-top: 5px; 
 `
 const Text = styled.Text`
  color: #3a86e9;

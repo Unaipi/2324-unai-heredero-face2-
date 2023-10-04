@@ -66,6 +66,11 @@ const ToolBar = () => {
                 </Menu>
                 <Separator />
                 <Menu>
+                    <MaterialCommunityIcons name="image-multiple" size={20} color="#4CAF58"/>
+                    <MenuText>Foto</MenuText>
+                </Menu>
+                <Separator />
+                <Menu>
                     <MaterialCommunityIcons name="video-plus" size={20} color="#A748ee" />
                     <MenuText>Sala</MenuText>
                 </Menu>
