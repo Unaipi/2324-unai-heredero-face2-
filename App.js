@@ -29,6 +29,7 @@ const App = () => {
     <NavigationContainer>
       <Tab.Navigator
       screenOptions={({route}) =>({
+        swipeEnabled: true,
         tabBarIcon: ({focused, color, size}) => {
           let iconName;
           if(route.name === 'Home') iconName = 'home'
@@ -42,7 +43,8 @@ const App = () => {
         },showIcon: true,
         showLabel: false,
         activeTintColor: '#3a86e9',
-        inactiveTintColor: '#9F9F9F'
+        inactiveTintColor: '#9F9F9F',
+        
       })}
       >
         <Tab.Screen name="Home" component={Home}/>

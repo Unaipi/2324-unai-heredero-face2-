@@ -72,7 +72,7 @@ const Story = () => {
                 <ScrollView
                 horizontal
                 showsHorizontalScrollIndicator={false}
-                style={{paddingLeft:10}}
+                style={{paddingLeft:10, height: 230 }}
                 >
                 <UserCard>
                     <UserCardHistory source={require('../assets/story.jpg')} />
