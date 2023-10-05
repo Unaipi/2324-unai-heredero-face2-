@@ -28,13 +28,6 @@ const App = () => {
     </ScrollView>
     <NavigationContainer>
       <Tab.Navigator
-      swipeEnabled={true}
-      tabBarOptions={{
-        showIcon: true,
-        showLabel: false,
-        activeTintColor: '#3a86e9',
-        inactiveTintColor: '#9F9F9F'
-      }}
       screenOptions={({route}) =>({
         tabBarIcon: ({focused, color, size}) => {
           let iconName;
@@ -46,7 +39,10 @@ const App = () => {
           else if(route.name === 'Menu') iconName = 'menu'
           return <MaterialCommunityIcons name={iconName} size={26} color={color} />;
 
-        },
+        },showIcon: true,
+        showLabel: false,
+        activeTintColor: '#3a86e9',
+        inactiveTintColor: '#9F9F9F'
       })}
       >
         <Tab.Screen name="Home" component={Home}/>
