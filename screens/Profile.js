@@ -1,16 +1,22 @@
 import React from "react";
 import { Text } from 'react-native';
 import styled from 'styled-components/native'
+import SearchBar from "../components/ProfileInfo";
+import Users from "../components/Users";
+import Avatar from "../components/Avatar";
+import ProfileHeader from "../components/Profileheader";
+import ProfileInfo from "../components/ProfileInfo";
 
 const View = styled.View`
-    align-items: center;
-    height: 500px;
+    flex: 1;
+    background-color: #FFFFFF;
 `
 
 const Profile = () => {
     return (
         <View>
-            <Text>Profile</Text>
+            <ProfileHeader/>     
+            <ProfileInfo/>    
         </View>
     )
 }

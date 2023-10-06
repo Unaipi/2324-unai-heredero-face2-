@@ -40,8 +40,9 @@ const App = () => {
           else if(route.name === 'Menu') iconName = 'menu'
           return <MaterialCommunityIcons name={iconName} size={26} color={color} />;
 
-        },showIcon: true,
-        showLabel: false,
+        },
+        showIcon: true,
+        tabBarShowLabel: false,
         activeTintColor: '#3a86e9',
         inactiveTintColor: '#9F9F9F',
         
